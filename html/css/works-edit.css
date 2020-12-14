@@ -1,0 +1,309 @@
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:200,850');
+
+body {
+    margin: 0;
+    background-color:  #ebfcf1;
+    font-family: 'Roboto', 'helvetica-neue';
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    size: relative;
+}
+
+div.container{
+    size: relative;
+}
+
+header .logo {
+    size: flex;
+    width: 95%;
+    cursor: pointer;
+    padding: 1em 0em;
+    position: center;
+}
+
+header .menu {
+   margin-top: .5em;
+   margin-left: 8.5em;
+   cursor: pointer;
+   padding: 1.5em 3em;
+   width: 10%;
+   display: block;
+}
+
+.boxlogo {
+    max-width: 125px;
+    margin-left: 1em;
+}
+/*above edits top left logo*/
+
+.logo{
+    animation-name: "clear";
+    opacity: 1;
+}
+
+.logo:hover{
+    animation-name: "fade";
+    animation: move 1.25s infinite alternate;
+    transition: 0.5s ease;
+}
+
+@keyframes move {
+    from{
+        opacity: 1;
+    }
+    
+    to{
+        opacity: 0;
+    }
+}
+/*above creates fade in-out hover effect*/
+
+a.hide-desktop {
+    width: 10px;
+}
+
+header nav ul{
+    list-style: none;
+    align-content: right;
+    padding: auto auto auto auto;
+}
+
+section  {
+    display: block;
+    margin-top: 3em;
+    text-align: justify;
+    margin-left: 1.5em;
+    justify-content: space-between;
+    line-height: 2em;
+    width: 95%;
+}
+
+.subhead{
+    line-height: 1.3em;
+    margin-bottom: 2em;
+}
+/*edits for subheaders*/
+
+.avi {
+    display: block;
+    max-width: 300px;
+    position: relative;
+    margin-left: 10px;
+    margin-top: -2em;
+}
+/*above line indicates avatar for this page*/
+
+.footer-container{
+    text-align: center;
+    padding: 1em;
+    list-style: none;
+    font-stretch: extra-condensed;
+    text-shadow: 1em;
+}
+
+.footer-links{
+    list-style: none;
+    text-align: center;
+    padding-right: 0px;
+}
+
+.fpp{
+    width: 25%
+}
+
+
+footer div img {
+    width: 75%
+}
+
+footer div p{
+    margin-top: 0.5em;
+    margin-bottom: 3em;
+}
+
+footer ul li{
+    list-style: none;
+    text-align: center;
+    margin-right: 2.5em;
+    line-height: 1.5em;
+    display: inline-block;
+}
+
+.hide-mobile {
+    display: none;
+}
+
+nav ul {
+    position: fixed;
+    width: 45%;
+    top: 0;
+    right: 0;
+    margin: 0 0 0 0;
+    line-height: 1.3em;
+    text-align: left;
+    background: #062206;
+    height: 100%;
+    padding-top: 1.3em;
+    z-index: 7;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    padding: 1em .5em;
+    background-color:#062206;
+}
+
+nav ul li a:hover {
+    background-color: #0a370a; 
+    width: 75%;   
+    animation: move 1.25s infinite alternate;
+    transition: 0.5s ease;
+}
+
+.exit-btn {
+    padding-bottom: 1.5em;
+    padding-right: .75em;
+    margin-top: -1;
+    margin-right: 2em;
+    text-align: right;
+}
+/* edits exit button*/
+
+.exit-btn img {
+    padding-top: .70em;
+    padding-right: .3em;
+    width: 22.5px;
+    cursor: pointer;
+}
+
+ul{
+    padding-inline-start: 0px;
+}
+#nav{
+    padding-left: 40px
+}
+/*
+-above line added for works page
+to fix centering footer and all
+-removes padding inline start  */
+
+/* below section coding css for Option Select*/
+.option-container{
+    text-align: center;
+    display: block;
+    background-color: none;
+    
+
+}
+.option-container ul {
+    text-align: center;
+    list-style: none;
+    justify-content: space-between;
+    line-height: 3em;
+    background-color: cumbucket;
+    display: inline-block;
+    text-decoration: none;
+    width: 300px;
+    margin-left: 0px;
+}
+.option-container ul li {
+    margin: 25px 25px;
+    text-align: center;
+}
+.option-container ul li a{
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    border: 3px inset black;
+    padding: 5px;
+}
+.option-container ul li a:hover{
+    border: 3px inset #157915;
+    padding: 5px;
+}
+.option-container ul a:hover {
+    font-weight: bold;
+    color:#062206;
+    text-decoration: none;
+    animation: move 1.1s infinite alternate;
+    animation-delay: 0.5s;
+    transition: 0.5s ease;
+}
+/*above code hover link for option container*/
+.option-container ul{
+    display: center;
+    text-decoration: none;
+}
+.option-select{
+    width: 10px;
+    padding-inline-start: none;
+}
+/*
+li#option2{
+    border: ;
+}
+li#option1{
+    max-width: ;    
+}
+^currently unused*/
+div .bodynav p{
+    line-height: 10px;
+}
+/* OPTION SELECT CODING END*/
+
+@media only screen and (min-width: 640px) {
+
+    .hide-desktop{
+        display: none;
+    }
+
+    .show-desktop{
+        display: block;
+        margin: 0 auto 13% auto;
+    }
+
+    .container{
+        width: 85%;
+        margin: 0 auto;
+    }
+
+    nav ul{
+        position: inherit;
+        width: auto;
+        background: none;
+        display: flex;
+        padding-top: 0;
+    }
+
+    nav ul li{
+        float: left;
+        margin-top: 2em;
+    }
+ 
+    nav ul li a{
+        color: black;
+        background-color: inherit;
+        text-align: start;
+        padding: 1em, 2em
+    }
+
+    nav ul li a:hover{
+        background-color: inherit;
+        text-emphasis: bold;
+        font-weight: bold;
+        width: 100%;
+        color: #062206;
+    }
+
+    .boxlogo {
+        max-width: 350px;
+    }
+}
