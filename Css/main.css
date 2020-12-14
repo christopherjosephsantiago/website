@@ -1,6 +1,11 @@
 
 @import url('https://fonts.googleapis.com/css?family=Roboto:200,850');
 
+html{
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     background-color:  #ebfcf1;
@@ -153,6 +158,8 @@ nav ul li a {
 nav ul li a:hover {
     background-color: #0a370a; 
     width: 75%;   
+    animation: move 1.25s infinite alternate;
+    transition: 0.5s ease;
 }
 
 .exit-btn {
@@ -167,8 +174,12 @@ nav ul li a:hover {
 .exit-btn img {
     padding-top: .70em;
     padding-right: .3em;
-    width: 22.5px;
+    width: 50px;
     cursor: pointer;
+}
+
+.address {
+    letter-spacing: 1.1px;
 }
 
 @media only screen and (min-width: 640px) {

@@ -1,6 +1,11 @@
 
 @import url('https://fonts.googleapis.com/css?family=Roboto:200,850');
 
+html{
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     background-color:  #ebfcf1;
@@ -129,7 +134,7 @@ footer div p{
 footer ul li{
     list-style: none;
     text-align: center;
-    margin-right: 2.5em;
+    margin: 0 1em;
     line-height: 1.5em;
     display: inline-block;
 }
@@ -180,7 +185,7 @@ nav ul li a:hover {
 .exit-btn img {
     padding-top: .70em;
     padding-right: .3em;
-    width: 22.5px;
+    width: 50px;
     cursor: pointer;
 }
 
@@ -200,9 +205,8 @@ to fix centering footer and all
     text-align: center;
     display: block;
     background-color: none;
-    
-
 }
+
 .option-container ul {
     text-align: center;
     list-style: none;
@@ -213,10 +217,17 @@ to fix centering footer and all
     text-decoration: none;
     width: 300px;
     margin-left: 0px;
+
 }
+
 .option-container ul li {
     margin: 25px 25px;
     text-align: center;
+    transition-duration: 1s;
+    background-clip: text;
+
+    transition: all 1s ease; 
+    cursor: pointer;
 }
 .option-container ul li a{
     text-align: center;
@@ -224,17 +235,25 @@ to fix centering footer and all
     color: black;
     border: 3px inset black;
     padding: 5px;
+
 }
+
+.option-container ul li:hover{
+    letter-spacing: 5.5px;
+    color: #062206;
+}
+
 .option-container ul li a:hover{
     border: 3px inset #157915;
     padding: 5px;
+    letter-spacing: 5.5px;
+    color: #062206;
 }
+
 .option-container ul a:hover {
     font-weight: bold;
     color:#062206;
     text-decoration: none;
-    animation: move 1.1s infinite alternate;
-    animation-delay: 0.5s;
     transition: 0.5s ease;
 }
 /*above code hover link for option container*/
@@ -246,14 +265,22 @@ to fix centering footer and all
     width: 10px;
     padding-inline-start: none;
 }
-/*
-li#option2{
-    border: ;
-}
+
 li#option1{
-    max-width: ;    
+    max-width: 150px; 
+    padding-left: 50px;   
 }
-^currently unused*/
+
+li#option2{
+    max-width: 150px; 
+    padding-left: 50px;   
+}
+
+li#option3{
+    max-width: 150px; 
+    padding-left: 50px;   
+}
+
 div .bodynav p{
     line-height: 10px;
 }
