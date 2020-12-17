@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aural Works: by Christopher</title>
+    <link rel="stylesheet" href="css/aural.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,900&display=swap');
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>        
+            <a href="index.html" class="boxlogo"><img src="images/cjs.png" alt="website logo" class="logo" a href="#"></a>
+            
+            <nav>
+                <a href="#" class="hide-desktop">
+                    <img src="images/menu.png" alt="menubar" class="menu" id="menu">
+                </a>
+
+                <ul class="show-desktop hide-mobile" id="nav">
+                    <li id="exit" class="exit-btn hide-desktop"><img src="images/x.svg" alt="x"></li>
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="works.html">works</a></li>
+                    <li><a href="about.html">about</a></li>
+                    <li><a href="shop.html">shop</a></li>
+                    <li><a href="resume.html">resume</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+    <div class="option-container">
+            <ul class="optionselect" id="bodynav">
+                <li id="option1"><a href="#">Project 1.</a></li>
+                <li id="option2"><a href="#">Project 2.</a></li></p1>
+                <li id="option3"><a href="#">Project 3.</a></li></p2>
+            </ul>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="container">
+                <a href="#">
+                    <img src="images/test.jpg" class="fpp" alt="front page picture">
+                </a>
+                    <p class="address"> born in japan<br> based in california </p>
+                    <ul class="footer-links">
+                        <li><a href="contact.html">contact.</a>
+                        </li>
+                        <li><a href="#">random work.</a>
+                        </li>
+                    </ul>
+
+            </div>
+        </div>
+    </footer>    
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+    <script>
+
+        var menu = document.getElementById('menu')
+        var nav = document.getElementById('nav')
+        var exit = document.getElementById('exit')
+
+        menu.addEventListener('click', function(e){
+            nav.classList.toggle('hide-mobile');
+        });
+
+        exit.addEventListener('click', function(e){
+            nav.classList.toggle('hide-mobile');
+        });
+
+    </script>
+
+</body>
+
+</html>
