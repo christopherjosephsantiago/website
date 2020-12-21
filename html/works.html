@@ -9,6 +9,17 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,900&display=swap');
     </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+        $("#bodynav li").click(function() { 
+            const html_filename = this.id + "_test.html"
+            $("#loaded-options-container").load(html_filename)
+            $("#loaded-options-container").toggle();
+        });
+        
+    });
+    </script>
 </head>
 
 <body>
@@ -32,15 +43,14 @@
             </nav>
         </header>
     </div>
-
-    <div class="option-container">
+    <div class="option-container" id="options">
             <ul class="optionselect" id="bodynav">
-                <li id="option1"><a href="visual.html">Visual.</a></li>
-                <li id="option2"><a href="aural.html">Aural.</a></li></p1>
-                <li id="option3"><a href="otherworks.html">Other.</a></li></p2>
+                <li class="option" id="visual"><a>Visual.</a></li>
+                <li class="option" id="aural"><a>Aural.</a></li></p1>
+                <li class="option" id="other"><a>Other.</a></li></p2>
             </ul>
     </div>
-
+    <div id="loaded-options-container"></div>
     <footer>
         <div class="footer-container">
             <div class="container">
@@ -76,7 +86,6 @@
         });
 
     </script>
-
 </body>
 
 </html>
